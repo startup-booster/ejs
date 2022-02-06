@@ -1,0 +1,23 @@
+name: 'EJS'
+
+description: 'Runs a EJS template with the given parameters'
+
+inputs:
+    input:
+        description: 'Input file name'
+        required: true
+        type: string
+
+    output:
+        description: 'Output file name'
+        required: true
+        type: string
+
+    parameters:
+        description: 'The parameters to pass to the template'
+        required: true
+        type: object
+
+runs:
+    using: node16
+    main: dist/index.js
